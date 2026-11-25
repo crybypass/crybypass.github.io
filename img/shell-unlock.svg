@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     version="1.1"
+     id="CryBypass_Lock"
+     width="250"
+     height="250"
+     viewBox="0 0 200 200">
+
+  <defs>
+    <!-- Premium gold body -->
+    <linearGradient id="gold-metal"
+                    x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFF0A6"/>
+      <stop offset="22%" stop-color="#F8D56B"/>
+      <stop offset="48%" stop-color="#C68A19"/>
+      <stop offset="72%" stop-color="#FFE18A"/>
+      <stop offset="100%" stop-color="#A96C0B"/>
+    </linearGradient>
+
+    <!-- Premium white chrome shackle -->
+    <linearGradient id="shackle-metal"
+                    x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="18%" stop-color="#C8CDD3"/>
+      <stop offset="35%" stop-color="#FFFFFF"/>
+      <stop offset="52%" stop-color="#8E969F"/>
+      <stop offset="70%" stop-color="#F8FAFC"/>
+      <stop offset="86%" stop-color="#B8BEC6"/>
+      <stop offset="100%" stop-color="#FFFFFF"/>
+    </linearGradient>
+
+    <!-- Keyhole eye highlight -->
+    <linearGradient id="keyhole-eye"
+                    x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#E8B943"/>
+    </linearGradient>
+
+    <!-- AI iris -->
+    <linearGradient id="iris"
+                    x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFF4C2"/>
+      <stop offset="100%" stop-color="#DDAA35"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Transparent canvas -->
+  <rect width="200" height="200" fill="none"/>
+
+  <!-- Unlock shackle: raised open end -->
+  <!-- Dark chrome outer contour -->
+  <path d="M66 112
+           V60
+           C66 41.5 81 26.5 99.5 26.5
+           C118 26.5 133 41.5 133 60
+           V64"
+        fill="none"
+        stroke="#626B75"
+        stroke-width="17"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+
+  <!-- White chrome metallic surface -->
+  <path d="M66 112
+           V60
+           C66 41.5 81 26.5 99.5 26.5
+           C118 26.5 133 41.5 133 60
+           V64"
+        fill="none"
+        stroke="url(#shackle-metal)"
+        stroke-width="13"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+
+  <!-- Premium gold lock body: outer shadow -->
+  <rect x="45" y="91"
+        width="110" height="78"
+        rx="13"
+        fill="#76500F"/>
+
+  <!-- Gold metallic body -->
+  <rect x="47" y="89"
+        width="106" height="78"
+        rx="12"
+        fill="url(#gold-metal)"/>
+
+  <!-- Subtle metallic highlight -->
+  <path d="M59 94 H141"
+        fill="none"
+        stroke="#FFF4C7"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        opacity=".8"/>
+
+  <!-- Keyhole cavity -->
+  <path d="M100 101
+           A15 15 0 0 0 91 128
+           L87 150
+           Q100 159 113 150
+           L109 128
+           A15 15 0 0 0 100 101 Z"
+        fill="#17202B"/>
+
+  <!-- AI eye symbol inside the keyhole -->
+  <g id="crybypass-ai-eye">
+
+    <!-- Eye contour -->
+    <path d="M88 115
+             Q100 104 112 115
+             Q100 126 88 115 Z"
+          fill="none"
+          stroke="url(#keyhole-eye)"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"/>
+
+    <!-- Iris -->
+    <circle cx="100" cy="115" r="5"
+            fill="url(#iris)"/>
+
+    <!-- Pupil -->
+    <circle cx="100" cy="115" r="2.2"
+            fill="#17202B"/>
+
+    <!-- AI / network nodes -->
+    <g fill="#FFF2B5">
+      <circle cx="100" cy="106.5" r="1.2"/>
+      <circle cx="87" cy="115" r="1.1"/>
+      <circle cx="113" cy="115" r="1.1"/>
+      <circle cx="100" cy="123.5" r="1.2"/>
+    </g>
+
+    <!-- Fine connecting lines -->
+    <g stroke="#E7B94D"
+       stroke-width=".7"
+       opacity=".9">
+      <path d="M100 108 V110"/>
+      <path d="M90 115 H94"/>
+      <path d="M106 115 H110"/>
+      <path d="M100 120 V122"/>
+    </g>
+
+  </g>
+
+  <!-- Bottom metallic edge -->
+  <path d="M61 160 H139"
+        fill="none"
+        stroke="#9B6811"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        opacity=".75"/>
+
+</svg>
